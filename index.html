@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reversi Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="status-panel">
+        <h1>Reversi</h1>
+        <div class="scoreboard">
+          <div class="score" id="black-score">Black: 2</div>
+          <div class="score" id="white-score">White: 2</div>
+        </div>
+        <p id="turn-indicator" class="turn-indicator">Black to play</p>
+        <p id="status-message" class="status-message"></p>
+        <button id="reset-button" type="button">Reset</button>
+      </section>
+      <section class="board-container">
+        <div id="board" class="board" role="grid" aria-label="Reversi board"></div>
+      </section>
+      <section class="instructions">
+        <h2>How to Play</h2>
+        <ol>
+          <li>Choose a square where your disk would bracket at least one opponent disk.</li>
+          <li>All bracketed disks flip to your color.</li>
+          <li>If you have no legal move you automatically pass.</li>
+          <li>The game ends when the board is full or both players must pass.</li>
+        </ol>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
